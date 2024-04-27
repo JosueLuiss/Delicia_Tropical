@@ -532,6 +532,7 @@ footer li:hover{
         display: flex;
         flex-direction: column;
         position: relative;
+        animation: none;
     }
 
     .delivery-btn{
@@ -555,7 +556,6 @@ footer li:hover{
     header .btn-delivery button:hover{
         border: none;
         background-color: initial;
-
     }
 
     section.anuncio{
