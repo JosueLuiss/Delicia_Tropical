@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    a{color: #fff;}
+    background-color:rgb(106, 33, 173);
+    margin: 0 auto;
+}
+
+header.top-header{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 2% 10%;
+    align-items: center;
+    background-color: rgb(57, 15, 95);;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 9999;
+    animation: flutuar 5s ease-in-out alternate;
+    margin: auto;
+}
+
+.logo h1{
+    font-size: 38px;
+    text-align: center;
+    color: rgb(209, 37, 66);
+    line-height: 25px;
+}
+
+.logo h1 span{
+    color: #00FF08;
+}
+
+
+header .links ul{
+    display: flex;
+}
+
+header .links li a{
+    margin: 10px;
+    color: white;
+    font-size: 19px;
+}
+
+header .links li a:hover{
+    color: #00FF08;
+    transition: .2s;
+}
+
+header .links li:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.delivery-btn{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+header .btn-delivery button{
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(57, 15, 95);
+    border-radius: 1cm;
+    border: 5px solid #00FF08;
+}
+
+header .btn-delivery button:hover{
+    background-color:  rgb(209, 37, 66);
+    border: solid 5px #00FF08;
+    transition: .5s;
+    transform: scale(1.05);
+    color: rgb(106, 33, 173);
+}
+
+header .btn-delivery:hover{
+    color: rgb(106, 33, 173);
+}
+
+section.anuncio{
+    background-color: rgb(106, 33, 173);
+    color: white;
+    padding: 8% 10% 0 12%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    align-items: center;
+}
+
+section.anuncio p{
+    font-size: 500%;
+    font-weight: 600;
+    line-height: 80%;
+    animation: flutuar2 3s ease-in-out infinite alternate;
+    position: relative;
+}
+
+section.anuncio p span{
+    color:#00FF08;
+}
+
+section.anuncio #pede{
+    font-size: 32px;
+    margin-left: .5%;
+    color: rgb(209, 37, 66);
+}
+
+section.anuncio img{
+    width: 100%;
+    animation: img 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        left: -230%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes img{
+    0%{
+        transform: rotate(0);
+        top: 0;
+    }
+    100%{
+        transform: rotate(-10deg);
+        top: 30px;
+    }
+}
+
+@keyframes flutuar2{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.cardapio{
+    padding: 0 10%;
+    margin-top: 2.1%;
+}
+
+h2.titulo{
+    font-size: 52px;
+    text-align: center;
+    color: #00FF08;
+}
+
+span{
+    color: rgb(209, 37, 66);
+}
+
+.cardapio .cardapio-box{
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 0.3cm;
+    width: 20%;
+    background-color: purple;
+    border: 3px solid black;
+    box-shadow: 0 0 8px #00FF08;
+    padding-bottom: 2%;
+}
+
+.cardapio .cardapio-box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 50px rgb(209, 37, 66);
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 1px solid #00FF08;
+}
+
+.cardapio .cardapio-box img{
+    width: 100%;
+}
+
+.cardapio .cardapio-box h3{
+    color: rgb(209, 37, 66);
+    font-size: 28px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cardapio .cardapio-box h4{
+    color: #00FF08;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.cardapio .cardapio-box li{
+    color: white;
+   text-align: center;
+}
+
+.cardapio .cardapio-box button{
+    padding: 2% 10%;
+    background-color: #00FF08;
+    border: none;
+    color: rgb(106, 33, 173);
+    border-radius: .2cm;
+    margin: 5% 0 0 24%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cardapio .cardapio-box button:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.cardapio .flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.sobre-nos{
+    padding: 10% 10%;
+}
+
+section.sobre-nos .logo-txt-sobre{
+    padding: 0 15%;
+    margin: auto;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+}
+
+section.sobre-nos .logo-txt-sobre p{
+    margin-top: 3%;
+}
+
+section.localização{
+    padding: 0% 10%;
+}
+
+section.localização iframe{
+    width: 100%;
+    margin-top: 3%;
+    border-radius: 1.5cm;
+    box-shadow: 0 0 20px rgb(209, 37, 66);
+}
+
+section.formulario{
+    padding: 10%;
+}
+
+section.formulario .form{
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+    width: 50%;
+}
+
+section.formulario .form input{
+    background-color: rgb(201, 187, 187);
+    padding: 3%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 1cm;
+}
+
+section.formulario .form textarea{
+    background-color: rgb(201, 187, 187);
+    margin-top: 3%;
+    border: none;
+    border-radius: .5cm;
+    padding: 3% 2%;
+}
+
+section.formulario .form button{
+    width: 30%;
+    padding: 2% 3%;
+    background-color: rgb(201, 187, 187);
+    border: none;
+    border-radius: 1cm;
+    margin: 3% auto;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section.formulario .form button:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    border: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    color: white;
+    background-color: #080808;
+    padding: 3%;
+}
+
+footer p{
+    text-align: center;
+    font-size: 22px;
+}
+
+footer ul{
+    display: flex;
+    gap: 15px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+footer li:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    color: rgb(209, 37, 66);
+}
+
+@media (max-width:1240px){
+    header.top-header{
+        gap: 5%;
+        padding: 2% 5%;
+    }
+
+    section.anuncio{
+        padding: 0%;
+        padding: 10% 0 0 0;
+    }
+
+    section.anuncio p{
+        font-size: 60px;
+    }
+
+    .cardapio .cardapio-box button{
+        margin: 5% 0 0 22%;
+    }
+}
+
+@media (max-width: 1140px){
+    .delivery-btn{
+        gap: 50px;
+    }
+
+    section.anuncio p{
+        font-size: 55px;
+    }
+
+    section.anuncio img{
+        width: 90%;
+    }
+
+    .cardapio{
+        padding: 0 10%;
+        margin-top: 1.5%;
+    }
+}
+
+@media (max-width: 998px){
+    header.top-header{
+        gap: 3%;
+        padding: 2% 3%;
+    }
+
+    header .btn-delivery button{
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .logo h1{
+        font-size: 30px;
+    }
+
+    .delivery-btn{
+        gap: 40px;
+    }
+
+
+    section.anuncio img{
+        width: 70%;
+    }
+
+    section.anuncio{
+        padding: 12% 0% 0 0% ;
+        padding: 15% 0% 0% 20%;
+        gap: 0%;
+    }
+
+    section.anuncio p{
+        font-size: 40px;
+    }
+
+    .cardapio .cardapio-box button{
+        margin: 5% 0 0 17%;
+    }
+
+    h2.titulo{
+        font-size: 38px;
+        text-align: center;
+        color: #00FF08;
+    }
+}
+
+@media (max-width: 850px){
+
+    header.top-header{
+        gap: 2%;
+        padding: 4% 2%;
+    }
+
+    header .btn-delivery button{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .logo h1{
+        font-size: 25px;
+        line-height: 70%;
+    }
+
+    header .links li a{
+        font-size: 17px;
+    }
+
+    .cardapio .cardapio-box button{
+        margin: 5% 0 0 19%;
+    }
+        .cardapio .cardapio-box{
+        width: 34%;
+    }
+
+    #casadinho{
+        margin-left: 33%;
+    }
+}
+
+@media (max-width: 730px){
+    header.top-header{
+        gap: 2%;
+        padding: 5% 2%;
+    }
+
+    header .btn-delivery button{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .logo h1{
+        font-size: 25px;
+    }
+
+    header .links li a{
+        font-size: 15px;
+    }
+
+    section.anuncio p{
+        font-size: 40px;
+    }
+
+    section.anuncio #pede{
+        font-size: 22px;
+    }
+
+    .cardapio .cardapio-box{
+        width: 34.3%;
+    }
+
+    .cardapio .cardapio-box button{
+        margin: 5% 0 0 21%;
+    }
+
+    #casadinho{
+        margin-left: 33.3%;
+    }
+}
+
+@media (max-width: 690px){
+
+    header.top-header{
+        flex-direction: column;
+    }
+
+    .delivery-btn{
+        padding-top: 2%;
+        gap: 10px;
+    }
+
+    .logo h1{
+        font-size: 42px;
+    }
+
+    section.anuncio{
+        padding: 30% 0% 0% 10%;
+        gap: 0%;
+    }
+
+    section.anuncio img{
+        width: 80%;
+    }
+
+    footer{
+        gap: 5%;
+        align-items: center;
+    }
+    
+    footer p{
+        font-size: 17px;
+    }
+    
+    footer ul{
+        gap: 10px;
+    }
+
+    footer .logo h1{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 560px){
+    header.top-header{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .delivery-btn{
+        flex-direction: column;
+    }
+
+    header ul{
+        flex-direction: column;
+    }
+
+    header li{
+        margin-top: 5%;
+        font-size: 22px;
+    }
+
+    header .btn-delivery button{
+        border: none;
+        padding: 0;
+    }
+
+    header .btn-delivery button:hover{
+        border: none;
+        background-color: initial;
+
+    }
+
+    section.anuncio{
+        padding: 5% 0% 0% 10%;
+    }
+
+    section.anuncio img{
+        width: 85%;
+    }
+
+    .cardapio .cardapio-box{
+        margin-left: 7%;
+        width: 40%;
+    }
+
+    .cardapio .cardapio-box button{
+        margin: 5% 0 0 16%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer p{
+        margin-top: 8%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    footer ul{
+        gap: 20px;
+        margin-top: 03%;
+        font-size: 14px;
+    }
+
+    section.formulario .form button{
+        font-size: 14px;
+    }
+}
